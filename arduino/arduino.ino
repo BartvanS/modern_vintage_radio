@@ -1,5 +1,5 @@
 int ledPin = 13;   // select the pin for the LED
-int potPin = 2;
+int potPin = A0;
 int value = 0;
 void setup() {
   Serial.begin(9600);
@@ -29,6 +29,6 @@ void handleVolume() {
 }
 
 void loop() {
-  handleSerial();
+ // handleSerial();
   handleVolume();
 }

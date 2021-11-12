@@ -1,11 +1,10 @@
-
 import pySerial
 import os
 import time
 serial = None
 
 try:
-    serial = pySerial.PySerial('COM6')
+    serial = pySerial.PySerial('COM3')
     connected = True
 except:
     print("could not connect serial")
